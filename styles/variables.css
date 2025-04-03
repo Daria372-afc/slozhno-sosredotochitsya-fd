@@ -2,3 +2,24 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --page-background-color: #000028;
+  --header-background-image: url(../images/cover-image-dark.png);
+  --decorated-zone-border: 1px solid #FF0070;
+  --header__theme-menu-button-color: #FF0070;
+  --header__theme-menu-button_active-border: 1px solid #FF0070;
+  --header__theme-menu-button-hover-border: 1px solid #FF007066;
+  --header__theme-menu-button-focus-border: 1px solid #FF0070;
+  --header-footer-text-color: #DB00FF;
+  --description-color: #000028;
+  --title-decor-background-color: #FF0070;
+  --intro-text-color: #000028;
+  --section-title-color: #FF0070;
+  --sub-title-color: #000028;
+  --text-color: #F1B2CE;
+  --link-focus-border: 1px solid #F1B2CE;
+  --sub-heading-color: #000028;
+  --footer-border: 1px solid #FF0070;
+  --footer-title-color: #DB00FF;
+  --accent-color: #FF0070;
+}

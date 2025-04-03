@@ -1,9 +1,13 @@
 /* Глобальные стили для проекта, их можно дополнять и менять по желанию */
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+html, .body {
+  overflow-x: hidden;/*Мой код*/
+  width: 100%;
 }
 
 body {

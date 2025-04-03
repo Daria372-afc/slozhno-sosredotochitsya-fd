@@ -2,4 +2,504 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+
+  /*Мой код*/
+  background-color: var(--page-background-color);
+  margin-bottom: 10px;
+}
+
+/*Мой код*/
+
+.header {
+  display: grid;
+  margin-bottom: 46px;
+  background-image: var(--header-background-image);
+  background-size: cover;
+}
+
+.decorated-zone {
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+}
+
+.decorated-zone::before,
+.decorated-zone::after {
+  position: absolute;
+  content: "";
+  border: var(--decorated-zone-border);
+  height: 25px;
+  width: 25.04px;
+}
+
+.decorated-zone::before {
+  right: 10px;
+  top: 10px;
+  border-left: none;
+  border-bottom: none;
+}
+
+.decorated-zone::after {
+  bottom: 4px;
+  left: 10px;
+  border-right: none;
+  border-top: none;
+}
+
+.header__theme-menu {
+  display: grid;
+  justify-content: end;
+  margin-bottom: 55px;
+  margin-top: 76px;
+}
+
+.header__theme-menu-item {
+  padding-bottom: 14px;
+}
+
+.header__theme-menu-button {
+  color: var(--header__theme-menu-button-color);
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: 'IBM Plex mono', Regular;
+  border: none;
+  padding-bottom: 1.5px;
+  padding-top: 1.5px;
+  padding-right: 13px;
+  padding-left: 13px;
+  text-transform: lowercase;
+}
+
+.header__theme-menu-button:hover {
+  border: var(--header__theme-menu-button-hover-border);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+  border: var(--header__theme-menu-button-focus-border);
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+.header__theme-menu-button_active {
+  border: var(--header__theme-menu-button_active-border);
+}
+
+.rec{
+  color: #FF0070;
+  text-transform: uppercase;
+  font-family: 'IBM Plex mono', Regular;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 39px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.rec::after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background-color: #FF0070;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px #FF0070;
+}
+
+.title {
+  margin-bottom: 55px;
+ }
+
+ .header-footer-text {
+  text-shadow: 4px 4px 0 var(--accent-color);
+  color: var(--header-footer-text-color);
+  font-family: 'IBM Plex mono', Bold;
+  font-size: 116px;
+  font-weight: 700;
+  line-height: 96px;
+}
+
+.description {
+  color: var(--description-color);
+  font-family: 'IBM Plex mono', Bold;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4px;
+  margin-bottom: 59px;
+}
+
+.title-decor {
+  background-color: var(--title-decor-background-color);
+}
+
+.intro-text {
+  color: var(--intro-text-color);
+  font-family: 'IBM Plex mono', Bold;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4px;
+}
+
+.main {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.section {
+  padding-bottom: 30px;
+}
+
+.section-title {
+  color: var(--section-title-color);
+  font-family: 'IBM Plex mono', Bold;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4px;
+  margin-bottom: 20px;
+}
+
+.sub-title {
+  color: var(--sub-title-color);
+  font-family: 'IBM Plex mono', Bold;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4px;
+  margin-bottom: 10px;
+}
+
+.text {
+  color: var(--text-color);
+  font-family: 'IBM Plex mono', Regular;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23.4px;
+  margin-bottom: 20px;
+}
+
+.link {
+  text-shadow: 4px 4px 0 var(--accent-color);
+  text-decoration: none;
+}
+
+.link:hover {
+  outline: none;
+  text-decoration: underline;
+}
+
+.link:focus {
+ outline: none;
+  border: var(--a-focus-border);
+}
+
+.title-block {
+  margin-bottom: 20px;
+}
+
+.sub-heading {
+  color: var(--sub-heading-color);
+  font-family: 'IBM Plex mono', Regular;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23.4px;
+  margin-bottom: 10px;
+}
+
+.content {
+  margin-bottom: 36px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.images {
+  margin-bottom: 10px;
+  width: 355px;
+}
+
+.images-sunset {
+  height: 138px;
+}
+
+.images-ice-crem {
+  height: 351px;
+}
+
+.images-tape {
+  height: 233px;
+}
+
+.images-books {
+  height: 350px;
+}
+
+.images-street {
+  height: 235px;
+}
+
+.footer {
+  position: relative;
+  padding-top: 275px;
+  padding-bottom: 276px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.footer::before,
+.footer::after {
+  position: absolute;
+  content: "";
+  border: var(--footer-border);
+  height: 25px;
+  width: 25.04px;
+}
+
+.footer::before {
+  right: 0;
+  top: 0;
+  border-left: none;
+  border-bottom: none;
+}
+
+.footer::after {
+  bottom: 0;
+  left: 0;
+  border-right: none;
+  border-top: none;
+}
+
+.footer-title {
+  color: var(--footer-title-color);
+  font-weight: 700;
+  font-size: 116px;
+  font-family: 'IBM Plex mono';
+}
+
+@media (min-width: 768px) {
+  .page {
+    padding-top: 0;
+    margin-bottom: 20px;
+  }
+  .header {
+    margin-bottom: 80px;
+  }
+  .decorated-zone {
+    padding-left: 0;
+    padding-right: 20px;
+  }
+  .decorated-zone::before {
+    right: 20px;
+    top: 20px;
+  }
+  .decorated-zone::after {
+    bottom: -2px;
+    left: 20px;
+  }
+  .header__theme-menu {
+    margin-top: 193px;
+    margin-bottom: 165px;
+  }
+  .rec {
+    right: 30px;
+    top: 20px;
+  }
+  .header-footer-text {
+    font-size: 120px;
+    margin-bottom: 162px;
+  }
+  .description {
+    width: 364px;
+    margin-bottom: 164px;
+    display: grid;
+    justify-self: end;
+  }
+  .main {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .section {
+    padding-bottom: 60px;
+  }
+  .conclusion {
+    display: grid;
+    grid-auto-flow: column;
+  }
+  .intro {
+    display: grid;
+    grid-auto-flow: column;
+  }
+  .section-title {
+    width: 236px;
+    display: grid;
+  }
+  .section--intro {
+    width: 472px;
+    display: grid;
+    justify-self: end;
+  }
+  .sub-title {
+    margin-bottom: 10px;
+  }
+  .sub-text {
+    margin-bottom: 20px;
+  }
+  .title-block {
+    margin-bottom: 20px;
+  }
+  .section--conclusion {
+    width: 472px;
+    display: grid;
+    justify-self: end;
+  }
+  .content {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 74px;
+  }
+  .images-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .images {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 0;
+  }
+  .images:nth-child(1) {
+    grid-column: span 2;
+  }
+  .images:nth-child(2) {
+    grid-row: span 2;
+  }
+  .images:nth-child(3) {
+    grid-row:span 2;
+  }
+  .images:nth-child(5) {
+    grid-column: span 2;
+  }
+  .footer {
+    padding-top: 448px;
+    padding-bottom: 443px;
+    padding-left: 193px;
+    padding-right: 204px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page {
+    padding: 0;
+ }
+ .decorated-zone {
+    padding-left: 0;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+  .decorated-zone::before {
+    right: 20px;
+    top: 20px;
+}
+  .decorated-zone::after {
+    bottom: -2px;
+    left: 20px;
+}
+  .header__theme-menu {
+    display: grid;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 291px;
+}
+  .header__theme-menu-list {
+    display: grid;
+    grid-auto-flow: column;
+}
+  .header__theme-menu-item {
+    margin-right: 10px;
+    padding: 0;
+}
+  .rec {
+    right: 30px;
+    top: 20px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+  .header-footer-text {
+    font-size: 157px;
+    margin-bottom: 129px;
+}
+  .description {
+    width: 491px;
+    margin-bottom: 116px;
+}
+  .main {
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+  .intro {
+    display: grid;
+    grid-auto-flow: column;
+}
+  .section-title {
+    width: 314.96px;
+}
+  .base {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+}
+  .section--intro {
+    width: 648.92px;
+}
+  .sub-title {
+    margin-bottom: 10px;
+}
+  .sub-text {
+    margin-bottom: 20px;
+}
+  .section--base {
+    width: 315px;
+}
+  .conclusion {
+    display: grid;
+    grid-auto-flow: column;
+}
+  .section--conclusion {
+    width: 648.92px;
+}
+  .title-block{
+    margin-bottom: 20px;
+}
+  .content {
+    margin-bottom: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+  .images {
+    padding: 0;
+}
+  .footer {
+    padding-top: 317px;
+    padding-bottom: 317px;
+    padding-left: 257px;
+    padding-right: 263px;
+}
+  .footer-title {
+    font-size: 157px;
+}
 }
