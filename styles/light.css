@@ -10,107 +10,60 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --accent-color: #FF8DCB;
+  --accent-color-footer-title: #FF8DCB;
+  --decorated-zone-border: 1px solid #353430;
+  --header-theme-menu-button-color: #353430;
+  --header-theme-menu-button-active-border: 1px solid #353430;
+  --header-theme-menu-button-hover-border: 1px solid #32312D66;
+  --header-theme-menu-button-focus-border: 1px solid #353430;
+  --main-title-color: #FFC2E6;
+  --header-description-color: #353430;
+  --title-decor-background-color: #FF8DCB;
+  --header-intro-text-color: #353430;
+  --text-color: #353430;
+  --link-hover-border: 2px solid #353430;
+  --link-focus-border: 1px solid #353430;
+  --block-title-color: #353430;
+  --footer-border: 1px solid #353430;
+  --footer-title-color: #FFC2E6;
+  --footer-title-text-shadow: 2px 2px 0px #FF0070;
 }
 
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
-  --page-background-color: #FFF1F7;
+  --page-background-image: url(../images/cover-image-light.png);
 }
 
-/*Мой код*/
-.theme-light .header {
-  --header-background-image: url(../images/cover-image-light.png);
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: #FF8DCB;
+    --accent-color-footer-title: #FF8DCB;
+    --page-background-image: url(../images/cover-image-light.png);
+    --decorated-zone-border: 1px solid #353430;
+    --header-theme-menu-button-color: #353430;
+    --header-theme-menu-button-active-border: 1px solid #353430;
+    --header-theme-menu-button-hover-border: 1px solid #32312D66;
+    --header-theme-menu-button-focus-border: 1px solid #353430;
+    --main-title-color: #FFC2E6;
+    --header-description-color: #353430;
+    --title-decor-background-color: #FF8DCB;
+    --title-color: #353430;
+    --text-color: #353430;
+    --link-hover-border: 2px solid #353430;
+    --link-focus-border: 1px solid #353430;
+    --block-title-color: #353430;
+    --footer-border: 1px solid #353430;
+    --footer-title-color: #FFC2E6;
+    --footer-title-text-shadow: 2px 2px 0px #FF0070;
+  }
 }
 
-.theme-light .decorated-zone {
-  --decorated-zone-border: 1px solid #353430;
+@media (prefers-color-scheme: light) {
+  .header__rec {
+    display: none;
+  }
 }
 
-.theme-light .header__theme-menu {
-  margin-top: 76px;
-  margin-bottom: 54px;
-}
-
-.theme-light .header__theme-menu-button {
-  --header__theme-menu-button-color: #353430;
-}
-
-.theme-light .header__theme-menu-button_active {
-  --header__theme-menu-button_active-border: 1px solid #353430;
-}
-
-.theme-light .header__theme-menu-button:hover {
-  --header__theme-menu-button-hover-border: 1px solid #32312D66;
-}
-
-.theme-light .header__theme-menu-button:focus {
-  --header__theme-menu-button-focus-border: 1px solid #353430;
-}
-
-.theme-light .rec {
+.theme-light .header__rec {
   display: none;
-}
-
-.theme-light .header-footer-text {
-  --header-footer-text-color: #FFC2E6;
-}
-
-.theme-light .description {
-  --description-color: #353430;
-}
-
-.theme-light .title-decor {
-  --title-decor-background-color: #FF8DCB;
-}
-
-.theme-light .intro-text {
-  --intro-text-color: #353430;
-}
-
-.theme-light .sub-title {
-  --sub-title-color: #353430;
-}
-
-.theme-light .text {
-  --text-color: #353430;
-}
-
-.theme-light .link:focus {
-  --a-focus-border: 1px solid #353430;
-}
-
-.theme-light .section-title {
-  --section-title-color: #353430;
-}
-
-.theme-light .sub-heading {
-  --sub-heading-color: #353430;
-}
-
-.theme-light .footer {
-  --footer-border: 1px solid #353430;
-}
-
-.theme-light .footer-title {
-  --footer-title-color: #FFC2E6;
-}
-
-@media (min-width: 768px) {
-  .theme-light .header__theme-menu {
-    margin-top: 193px;
-    margin-bottom: 164px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .theme-light .header__theme-menu {
-    margin-top: 0;
-    margin-bottom: 291px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .theme-light .footer {
-    text-shadow: 2px 2px 0px #FF0070;
-  }
 }

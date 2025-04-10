@@ -10,78 +10,50 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --accent-color: #FF0070;
+  --accent-color-footer-title: #FF0070;
+  --decorated-zone-border: 1px solid #FF0070;
+  --header-theme-menu-button-color: #FF0070;
+  --header-theme-menu-button-active-border: 1px solid #FF0070;
+  --header-theme-menu-button-hover-border: 1px solid #FF007066;
+  --header-theme-menu-button-focus-border: 1px solid #FF0070;
+  --main-title-color: #DB00FF;
+  --header-description-color: #000028;
+  --title-decor-background-color: #FF0070;
+  --title-color: #000028;
+  --block-title-color: #FF0070;
+  --text-color: #F1B2CE;
+  --link-hover-border: 2px solid #F1B2CE;
+  --link-focus-border: 1px solid #F1B2CE;
+  --footer-border: 1px solid #FF0070;
+  --footer-title-color: #DB00FF;
+  --footer-title-text-shadow: 2px 2px 0px #FF0070;
 }
 
 .theme-dark .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
   --page-background-color: #000028;
+  --page-background-image: url(../images/cover-image-dark.png);
 }
 
-/*Мой код*/
-.theme-dark .header {
-  --header-background-image: url(../images/cover-image-dark.png);
+.theme-dark .header__rec{
+  color: #FF0070;
+  text-transform: uppercase;
+  font-family: 'IBM Plex mono', Regular;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 39px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
 }
 
-.theme-dark .decorated-zone {
-  --decorated-zone-border: 1px solid #FF0070;
-}
-
-.theme-dark .header__theme-menu-button {
-  --header__theme-menu-button-color: #FF0070;
-}
-
-.theme-dark .header__theme-menu-button_active {
-  --header__theme-menu-button_active-border: 1px solid #FF0070;
-}
-
-.theme-dark .header__theme-menu-button:hover {
-  --header__theme-menu-button-hover-border: 1px solid #FF007066;
-}
-
-.theme-dark .header__theme-menu-button:focus {
-  --header__theme-menu-button-focus-border: 1px solid #FF0070;
-}
-
-.theme-dark .header-footer-text {
-  --header-footer-text-color: #DB00FF;
-}
-
-.theme-dark .description {
-  --description-color: #000028;
-}
-
-.theme-dark .title-decor {
-  --title-decor-background-color: #FF0070;
-}
-
-.theme-dark .intro-text {
-  --intro-text-color: #000028;
-}
-
-.theme-dark .section-title {
-  --section-title-color: #FF0070;
-}
-
-.theme-dark .sub-title {
-  --sub-title-color: #000028;
-}
-
-.theme-dark .text {
-  --text-color: #F1B2CE;
-}
-
-.theme-dark .link:focus {
-  --a-focus-border: 1px solid #F1B2CE;
-}
-
-.theme-dark .sub-heading {
-  --sub-heading-color: #000028;
-}
-
-.theme-dark .footer {
-  --footer-border: 1px solid #FF0070;
-}
-
-.theme-dark .footer-title {
-  --footer-title-color: #DB00FF;
+.theme-dark .header__rec::after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background-color: #FF0070;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px #FF0070;
 }
