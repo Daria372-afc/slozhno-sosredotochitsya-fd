@@ -35,7 +35,7 @@
   --page-background-image: url(../images/cover-image-dark.png);
 }
 
-.theme-dark .header__rec{
+.theme-dark .header__rec {
   color: #FF0070;
   text-transform: uppercase;
   font-family: 'IBM Plex mono', Regular;

@@ -55,7 +55,7 @@
   margin-top: 76px;
 }
 
-.header__rec{
+.header__rec {
   color: #FF0070;
   text-transform: uppercase;
   font-family: 'IBM Plex mono', Regular;
@@ -128,7 +128,7 @@
   line-height: 83%;
 }
 
-.header__description  {
+.header__description {
   color: var(--header-description-color);
   font-family: 'IBM Plex mono', Bold;
   font-weight: 700;
@@ -170,7 +170,7 @@
   margin-bottom: 20px;
 }
 
-.title_sub{
+.title_sub {
   font-weight: 700;
   margin-bottom: 10px;
 }
