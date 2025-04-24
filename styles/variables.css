@@ -15,10 +15,9 @@
   --title-color: #000028;
   --block-title-color: #FF0070;
   --text-color: #F1B2CE;
-  --link-hover-border: 2px solid #F1B2CE;
+  --link-hover-border: 1.5px solid #F1B2CE;
   --link-focus-border: 1px solid #F1B2CE;
   --footer-border: 1px solid #FF0070;
-  --footer-title-color: #DB00FF;
   --accent-color: #FF0070;
   --accent-color-footer-title: #FF0070;
 }
